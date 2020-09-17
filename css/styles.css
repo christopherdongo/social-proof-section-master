@@ -1,0 +1,370 @@
+
+:root{
+/*Primary*/
+--VeryDarkMagenta: hsl(300, 43%, 22%);
+--SoftPink: hsl(333, 80%, 67%);
+/*Neutral*/
+--Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+--LightGrayish-Magenta: hsl(300, 24%, 96%);
+--White: hsl(0, 0%, 100%);
+}
+
+  
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--White);
+    margin-left: 8em;
+    margin-right: 8em;
+    margin-top:8em;
+    height:100vh ;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+.container{  
+    display: flex;
+    justify-content: space-evenly;
+}
+.container-title{
+    flex:1;
+    margin: auto;
+}
+.container-title h2{
+    color: var(--VeryDarkMagenta);
+    text-justify: right;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+    font-size: 3.5em;
+    line-height: 1;
+}
+.container-title p{
+    margin:auto;
+    padding-top:0.8em;
+    font-family: 'Spartan', sans-serif;
+    color: #bcb7bd;
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+.container-start{
+    flex: 1;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    padding: 0;
+}
+
+.card-start-1, .card-start-2, .card-start-3{
+    background-color: var(--LightGrayish-Magenta);
+    margin-top: 1em;
+    padding: 1.2em;
+    border-radius: 0.5em;
+}
+.start-reviews-1, .start-reviews-2, .start-reviews-3{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+.start-reviews-1 p, .start-reviews-2 p, .start-reviews-3 p{
+    font-family: 'Spartan', sans-serif;
+    color: var(--VeryDarkMagenta);
+    font-weight: 700;
+    font-size: 0.8em;
+  }
+.start-reviews-1 div, .start-reviews-2 div, .start-reviews-3 div{
+    margin-right: 20px;
+  }
+  .card-start-1{
+      margin-left: 4em;
+      margin-right: 6em;
+  }
+.card-start-2{
+    margin-left: 6em;
+    margin-right: 3em;
+}
+.card-start-3{
+    margin-left: 9em;
+}
+
+/*card-3*/
+.container-3{
+  display: flex;
+  padding-top: 2em;
+}
+.card-1, .card-2, .card-3{
+    flex:1;
+    background-color: var(--VeryDarkMagenta);
+    padding:2em;
+    border-radius: 0.5em;
+}
+.card-1{
+    position: relative;
+    margin-top:2em;
+    margin-bottom: 2em;
+}
+.card-2{
+    position: relative;
+    top: 1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-right: 1em;
+    margin-left: 2em;
+}
+.card-3{
+    position: relative;
+    top: 2.5em;
+    margin-left: 1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.name{
+    font-weight: bold;
+    color: var(--White);
+    margin-left:1em ;
+}
+.verified{
+    color: var(--SoftPink);
+    margin-left: 1em;
+}
+/*part 2*/
+figure{
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: -2em;
+}
+.avatar{
+   border-radius: 50%;
+   max-width: 50%;
+}
+/*footer*/
+.card-1 div, .card-2 div, .card-3 div{
+   display: flex;
+   padding-bottom: 15px;
+}
+.card-1 div div, .card-2 div div, .card-3 div div{
+    display: flex;
+    flex-direction: column;
+    padding-top:0.1em;  
+}
+.name{
+    font-size: 1em;
+}
+.text{
+    color: var(--White);
+    font-size: 0.9em;
+    line-height: 1.5em;
+}
+/*footer*/
+.attribution {
+    font-size: 15px;
+    text-align: center;
+    padding-top: 5em;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+/*media query*/
+
+@media (min-width: 1199.98px)  {
+   
+}
+/*Fin Escritorio*/
+
+/*Tablet*/
+/*Portrait*/
+
+/*landscape*/
+@media (min-width: 801.98px) and (max-width: 1199.98px)and (orientation:landscape) {
+    body{
+        padding-top:5em;
+        margin:1.6em;
+    }
+    .container-3{
+     display: flex;
+     justify-content:initial;
+    }
+    .card-1{
+        position: relative;
+        width: 400px;
+
+    }
+    .card-2{
+        position: relative;
+        top: 1em;
+        width: 400px;
+
+    }
+    .card-3{
+        position: relative;
+        top: 2.5em;
+        width: 400px;
+    }
+
+    footer{
+        margin-bottom: 2em;
+    }
+
+}
+/*fin tablet*/
+
+/*movil*/
+/*Portrait*/
+/*Default*/
+@media screen and (max-width: 800.98px) {
+    .svg-start{
+        width: 22px;
+    }
+    body{
+        margin: 2em;
+    }
+  .container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-left:auto;
+      margin-right: auto;
+      padding-top: 6em;
+      padding-bottom: 3em;
+  }
+  .container-title h2{
+    color: var(--VeryDarkMagenta);
+    text-align: center;
+    font-weight: bold;
+    font-size: 3em;
+    line-height: 1;
+}
+.container-title p{
+   text-align:center;
+   padding-top:15px;
+   display: flex;
+   justify-content: center;
+   margin-right: 0;
+   margin: auto;
+   padding-bottom: 2em;
+}
+.container-start{
+    flex: 1;
+    min-width: 100%;
+    margin-right: 0em;
+    margin-left: 0em;
+}
+.start-reviews-1 div, .start-reviews-2 div, .start-reviews-3 div{
+    padding-bottom: 0.8em;
+}
+.start-reviews-1, .start-reviews-2, .start-reviews-3{
+    display: flex;
+    min-width:100%;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+  .start-reviews-1 p, .start-reviews-2 p, .start-reviews-3 p{
+    padding-bottom: 0.8em;
+    font-size: 1em;
+}
+.card-start-1{
+    margin-left: 0em;
+    margin-right: 0em;
+}
+.card-start-2{
+  margin-left: 0em;
+  margin-right: 0em;
+}
+.card-start-3{
+  margin-left: 0em;
+}
+
+/*container3*/
+.container-3{
+    padding-top:10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .card-1, .card-2, .card-3{
+    margin-top:5px;
+    margin-bottom: 5px;
+ }
+ .card-2{
+     margin-left:0em;
+     margin-right: 0em;
+ }
+ .card-3{
+     margin-left:0em;
+ }
+
+}
+
+@media screen and (min-width:1440px) {
+    .container-title h2{
+        color: var(--VeryDarkMagenta);
+        width: 500px !important;
+        font-family: 'Spartan', sans-serif;
+        font-weight: bold;
+        font-size: 3em;
+        line-height: 1;
+    }
+    .container-title p{
+        width: 550px;
+        font-family: 'Spartan', sans-serif;;
+        margin-right: 2em;
+        padding-top:15px;
+        font-size: 1em;
+     }
+     .container-start{
+         margin-bottom: -2em;
+     }
+     .card-start-1, .card-start-2, .card-start-3{
+       padding: 1.2em;
+      }
+
+      .container-3{
+          padding-top: 4em;
+      }
+      .name{
+        font-family: 'Spartan', sans-serif;
+        font-weight: 500;
+        color: var(--White);
+        margin-left:1em ;
+        font-size: 15px;
+    }
+    .text{
+        color: var(--White);
+        font-family: 'Spartan', sans-serif;
+        font-weight: 400;
+        font-size: 0.9em;
+        line-height: 1.5em;
+    }
+}
+
+@media (max-width: 375px)  {
+    .svg-start{
+        width: 18px;
+    }
+    .container-title h2{
+        color: var(--VeryDarkMagenta);
+        font-size: 2em;
+    }
+    .container-title p{
+        color: var(--VeryDarkMagenta);
+        font-size: 1.5em;
+    }
+    .container-title p{
+        font-family: 'Spartan', sans-serif;;
+        padding-top:15px;
+        font-size: 1em;
+        margin: auto;
+     }
+     .start-reviews-1 div, .start-reviews-2 div, .start-reviews-3 div{
+         padding-bottom: 0.8em;
+     }
+     footer{
+         margin-top: 2em;
+     }
+     .card-1, .card-2, .card-3{
+       margin-bottom: 0.1em;
+     }
+}
